@@ -13,7 +13,8 @@ var helpers = require('../common/helpers.js');
 var log = helpers.log;
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/mongotest');
+//mongoose.connect('mongodb://localhost:27017/mongotest');
+mongoose.connect('mongodb://admin:cisco123@ds031711.mongolab.com:31711/imgploader');
 mongoose.connection.on('open', function() {
    log.info('Mongoose connected.');
 });
